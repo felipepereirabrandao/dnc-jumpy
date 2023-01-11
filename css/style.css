@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Freesans;
+  src: url(../font/FreeSans.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #1e1e1e;
+  --buttons: #0c70f2;
+   --buttons-hover: #0c64d8;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Helvetica";
+  color: #fff;
+}
+
+.container_form {
+  width: 524px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.container_form h2 {
+  text-align: center;
+}
+
+.container_form img {
+  width: 511px;
+}
+
+.container_form label {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.container_form input {
+  border: 0;
+  border-radius: 10px;
+}
+.container_form input:focus{
+    outline: none;
+}
+.container_form input:placeholder-shown {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 13px;
+}
+
+.container_form label,
+.container_form input {
+  font-family: Freesans;
+  font-size: 20px;
+}
+
+.container_form button {
+  height: 48px;
+  margin-top: 32px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--buttons);
+  color: #fff;
+}
+
+.container_form button:hover {
+    background: var(--buttons-hover);
+}
