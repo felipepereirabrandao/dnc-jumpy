@@ -12,7 +12,7 @@
 :root {
   --background: #1e1e1e;
   --buttons: #0c70f2;
-   --buttons-hover: #0c64d8;
+  --buttons-hover: #0c64d8;
 }
 
 body {
@@ -21,18 +21,27 @@ body {
   color: #fff;
 }
 
+header img {
+  margin-left: 55px;
+  margin-top: 20px;
+}
+
 .container_form {
   width: 524px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  margin-top: -45px;
 }
 .container_form h2 {
   text-align: center;
+  margin-top: 28px;
+  margin-bottom: 40px;
 }
 
 .container_form img {
   width: 511px;
+  
 }
 
 .container_form label {
@@ -49,9 +58,11 @@ body {
 .container_form input {
   border: 0;
   border-radius: 10px;
+  height: 52px;
+  padding-left: 13px;
 }
-.container_form input:focus{
-    outline: none;
+.container_form input:focus {
+  outline: none;
 }
 .container_form input:placeholder-shown {
   font-family: "Raleway";
@@ -84,5 +95,23 @@ body {
 }
 
 .container_form button:hover {
-    background: var(--buttons-hover);
+  background: var(--buttons-hover);
+}
+
+#textAlert {
+  margin-top: 8px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #e73550;
+}
+
+#textAlert.active {
+    display: block;
+}
+
+#textAlert.hidden {
+    display:  none !important;
 }
