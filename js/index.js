@@ -11,6 +11,7 @@ btnSend.addEventListener('click', function() {
             textAlertErro()
         }else {
             textAlertSucesso()
+            element.value = ""
         }
     });
     
