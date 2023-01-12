@@ -9,35 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <title>Login Page</title>
 </head>
-<body>
+<body>git branch -M main
     <header>
         <img src="/img/logo_dnc.png" alt="dnc_logo" class="logo">
     </header>
 
-    <section class="container_form">
+    <form class="container_form">
         <img src="/img/logo_jumpy_preto.png" class="img_jumpy">
         <h2>Bem vindo ao Jumpy!</h2>
 
         <label >Nome Completo:</label>
-        <input id="name" type="text" placeholder="Nome completo">
+        <input id="name" type="text" placeholder="Nome completo" >
         
         <label> Email:</label>
-        <input id="email" type="email" placeholder="Email@email.com">
+        <input id="email" type="email" placeholder="Email@email.com" required>
 
         <label for="telefone">Telefone:</label>
-        <input id="phone" type="text" placeholder="(00) 00000-0000">
+        <input id="phone" type="text" placeholder="(00) 00000-0000" >
 
         <label for="cpf">CPF:</label>
-        <input id="cpf" type="text" placeholder="000.000.000-00">
+        <input id="cpf" type="text" placeholder="000.000.000-00" >
 
         <label for="password">Senha:</label>
-        <input id="password" type="password" placeholder="**********">
+        <input id="password" type="password" placeholder="**********" >
 
         <button id="btnSend">Cadastrar</button>
 
        <p class="hidden" id="textAlert">Campos obrigatórios não registrados.</p>
-
-    </section>
+    </form>
 
     <script src="/js/index.js"></script>
 </body>
