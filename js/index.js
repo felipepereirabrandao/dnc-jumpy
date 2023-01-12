@@ -9,9 +9,11 @@ btnSend.addEventListener('click', function() {
     input.forEach(element => {
         if(element.value == ""){
             textAlertErro()
+            return
         }else {
-            textAlertSucesso()
-            element.value = ""
+            textAlertSucesso(element)
+              
+            
         }
     });
     
@@ -22,6 +24,7 @@ function textAlertSucesso() {
     textAlert.innerText ="Sucesso!"
     textAlert.classList.remove('hidden')
     
+    
 }
 function textAlertErro() {
     textAlert.style.color = "#E73550"
@@ -29,6 +32,8 @@ function textAlertErro() {
     textAlert.classList.remove('hidden')
     
 }
+
+
 
 
 
